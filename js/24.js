@@ -23,6 +23,24 @@ const carrito = [
 for (let i = 0; i < carrito.length; i++){
     console.table(carrito[i].nombre, carrito[i].precio)
 }
-// While Loop
+// While Loop: evalua la condicion, y si es verdadera, ejecuta el codigo
+let i = 1; // indice o valor inicial
+while( i <= 100 ){//condicion
+    if(i%2===0){
+        console.log(`El numero ${i} es par. (Usando while)`)
+    }else{
+        console.log(`El numero ${i} es impar. (Usando while)`)
+    }
+    i++;//incremmento
+}
 
-// Do while Loop
+// Do while Loop: ejecuta el codigo al menos una vez aunque la condicion no se cumpla y luego evalua.
+let index = 1;
+do{
+    if(index % 2 === 0){
+        console.log(`El numero ${index} es par. (Usando Do while)`);
+    }else{
+        console.log(`El numero ${index} es impar. (Usando Do while)`);
+    }
+    index ++;
+}while(index < 10)
